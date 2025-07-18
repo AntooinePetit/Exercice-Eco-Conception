@@ -36,7 +36,7 @@ var button = document.querySelector('#addtocart');
 
 // Ajout au panier
 
-document.querySelectorAll('#addtoCart').forEach(button => {
+document.querySelectorAll('.addtoCart').forEach(button => {
     button.addEventListener('click', () => {
         const productName = button.getAttribute('data-name');
         const productPrice = button.getAttribute('data-price');
