@@ -29,7 +29,14 @@ h3 {
   font-size: 30px;
 }
 
-p {
+p,
+button,
+input[type="submit"],
+input,
+input::placeholder,
+textarea,
+textarea::placeholder,
+label {
   font-size: 20px;
   font-weight: 400;
 }
@@ -95,7 +102,7 @@ header {
   right: 20px;
   color: #fff;
 
-  &:hover{
+  &:hover {
     cursor: pointer;
   }
 }
@@ -260,8 +267,8 @@ footer {
   padding-top: 15px;
 }
 
-footer a:hover{
-    color: var(--main-color);
+footer a:hover {
+  color: var(--main-color);
 }
 
 .footer {
@@ -297,8 +304,8 @@ footer a:hover{
   color: var(--white);
 }
 
-.footer2 ul{
-    justify-self: center;
+.footer2 ul {
+  justify-self: center;
 }
 
 /* Responsive */
@@ -310,16 +317,16 @@ footer a:hover{
   }
 
   .section2 div:nth-child(2) {
-    article{
-        flex: 1 0 48%;
+    article {
+      flex: 1 0 48%;
     }
     flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 767px) {
-  /* .header > ul{
-        display: none;
-    } */
+  h1 {
+    font-size: 64px;
+  }
 
   .header ul {
     display: none;
@@ -327,11 +334,13 @@ footer a:hover{
     width: 100%;
     background-color: #333;
     position: absolute;
+    list-style: none;
+    padding: 0;
     top: 50px;
     left: 0;
 
-    a:hover{
-        color: var(--main-color);
+    a:hover {
+      color: var(--main-color);
     }
   }
 
@@ -348,12 +357,16 @@ footer a:hover{
     display: block;
   }
 
+  .social a {
+    padding: 15px 20px;
+  }
+
   #about .container-1440,
-  .footer2{
+  .footer2 {
     grid-template-columns: 1fr;
   }
 
-  .footer2 ul{
+  .footer2 ul {
     justify-self: baseline;
     padding: 0;
   }
