@@ -18,56 +18,60 @@
     <title>Cookie Cookie (corrigé)</title>
   </head>
   <body>
-    <header class="header">
-      <a href="/">
-        <i class="fa-solid fa-cookie-bite"></i>
-        Cookie Cookie
-      </a>
+    <header>
+      <div class="header container-1440">
+        <a href="/">
+          <i class="fa-solid fa-cookie-bite"></i>
+          Cookie Cookie
+        </a>
 
-      <button class="menu-toggle" aria-label="Toggle menu">
-        <i class="fas fa-bars"></i>
-      </button>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
 
-      <nav>
-        <ul id="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+        <nav>
+          <ul id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
 
-      <i id="cart" class="fa-solid fa-cart-shopping"></i>
+        <i id="cart" class="fa-solid fa-cart-shopping"></i>
 
-      <div id="cart-content" style="display: none">
-        <button id="close-cart">X</button>
-        <h3>Mon panier</h3>
-        <ul id="cart-items"></ul>
-        <p>Total: $<span id="cart-total"></span></p>
-        <div class="buttonzone">
-          <button id="clear-cart">Vider le panier</button>
-          <button id="checkout">Valider la commande</button>
+        <div id="cart-content" style="display: none">
+          <button id="close-cart">X</button>
+          <h3>Mon panier</h3>
+          <ul id="cart-items"></ul>
+          <p>Total: $<span id="cart-total"></span></p>
+          <div class="buttonzone">
+            <button id="clear-cart">Vider le panier</button>
+            <button id="checkout">Valider la commande</button>
+          </div>
         </div>
       </div>
     </header>
 
     <main id="main-content">
-      <section id="about" class="section1">
-        <article>
-          <h1>Delicious Cookies Baked with Love</h1>
-          <p>
-            Indulge in the irresistible flavors of our freshly baked cookies,
-            made with the finest ingredients.
-          </p>
-          <div>
-            <button type="submit">Explore Menu</button>
-            <button type="submit">Contact Us</button>
-          </div>
-        </article>
-        <img src="img/5.webp" alt="Photo de cookies dans une assiette" />
+      <section id="about">
+        <div class="container-1440">
+          <article>
+            <h1>Delicious Cookies Baked with Love</h1>
+            <p>
+              Indulge in the irresistible flavors of our freshly baked cookies,
+              made with the finest ingredients.
+            </p>
+            <div>
+              <button type="submit">Explore Menu</button>
+              <button type="submit">Contact Us</button>
+            </div>
+          </article>
+          <img src="img/5.webp" alt="Photo de cookies dans une assiette" />
+        </div>
       </section>
 
-      <section class="section2">
+      <section class="section2 container-1440">
         <div>
           <h2>Our menu</h2>
           <p class="subtitle">Explore Our Delectable Cookies</p>
@@ -145,7 +149,7 @@
         </div>
       </section>
 
-      <section class="section3">
+      <section class="section3 container-1440">
         <img src="img/6.webp" alt="Photo de macarons en forme de coeur" />
         <article>
           <div>
@@ -182,78 +186,84 @@
       </section>
     </main>
     <footer>
-      <article class="footer">
-        <a href="/">
-          <i class="fa-solid fa-cookie-bite"></i>
-          Cookie Cookie
-        </a>
+      <div class="container-1440">
+        <div class="footer">
+          <a href="/">
+            <i class="fa-solid fa-cookie-bite"></i>
+            Cookie Cookie
+          </a>
 
-        <div>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Refund Policy</a>
+          <div class="social">
+            <a href="https://www.instagram.com/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://x.com/home?lang=fr"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.facebook.com/"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </div>
         </div>
-      </article>
-      <article class="footer2">
-        <div class="apropos">
-          <h3>A propos</h3>
-          <p>
-            Mon adresse : 140 avenue jacques troussel, 83136 Rocbaron. <br />
-            Mon numéro de téléphone : 05 56 67 78 89.<br />
-            Je réponds au téléphone du lundi au vendredi de 10 h à 19 h.
-          </p>
+        <div class="footer2">
+          <div class="apropos">
+            <p class="subtitle">A propos</p>
+            <p>
+              Mon adresse : 140 avenue jacques troussel, 83136 Rocbaron. <br />
+              Mon numéro de téléphone : 05 56 67 78 89.<br />
+              Je réponds au téléphone du lundi au vendredi de 10 h à 19 h.
+            </p>
+          </div>
+          <div class="partenaire">
+            <ul>
+              <li><a href="https://www.castorama.fr/">Castorama</a></li>
+              <li>
+                <a
+                  href="https://www.cash-piscines.com/?utm_source=Google&utm_medium=Search&utm_id=Marque&gad_source=1&gclid=Cj0KCQjwhb60BhClARIsABGGtw_Eb6NBMMKSsR_T85NYbJpVzO_9AhBy1OgMrgUcKMu7wZJfSKJenvEaAtVsEALw_wcB"
+                  >Cash piscine</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.renault.fr/?CAMPAIGN=fr-fr-r-l-def-brand-all_products-na-go-classic-marque_renault_go_def_exact&utm_campaign=fr-fr-r-l-def-brand-all_products-na-go-classic-marque_renault_go_def_exact&utm_medium=cpc&utm_source=google&utm_content=generic-na-brand-ao-exact-contextual-def_renault-renault&utm_term=renault&&&ppc_keyword=renault&gad_source=1&gclid=Cj0KCQjwhb60BhClARIsABGGtw-065BEHyfXS9jGutRwLhtxhY-7iV0odY0LqciFY4FWYW9LsqzydaUaAgMjEALw_wcB&gclsrc=aw.ds"
+                  >Renault</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.kebab-frites.com/kebab/brignoles-v34474.html"
+                  >Kebab</a
+                >
+              </li>
+              <li>
+                <a href="https://www.credit-agricole.fr/ca-pca/particulier.html"
+                  >Crédit agricole</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://travail-emploi.gouv.fr/droit-du-travail/handicap-et-travail/article/esat-etablissements-ou-services-d-aide-par-le-travail"
+                  >Travail Emploi</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Refund Policy</a></li>
+            </ul>
+          </div>
+
+          <form action="newsletter.php" method="post" style="display: none">
+            <p>Inscription à la newsletter</p>
+            Name: <input type="text" name="name" /><br />
+            E-mail: <input type="text" name="email" /><br />
+            <input type="submit" />
+          </form>
         </div>
-        <div class="partenaire">
-          <ul>
-            <li><a href="https://www.castorama.fr/">Castorama</a></li>
-            <li>
-              <a
-                href="https://www.cash-piscines.com/?utm_source=Google&utm_medium=Search&utm_id=Marque&gad_source=1&gclid=Cj0KCQjwhb60BhClARIsABGGtw_Eb6NBMMKSsR_T85NYbJpVzO_9AhBy1OgMrgUcKMu7wZJfSKJenvEaAtVsEALw_wcB"
-                >Cash piscine</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.renault.fr/?CAMPAIGN=fr-fr-r-l-def-brand-all_products-na-go-classic-marque_renault_go_def_exact&utm_campaign=fr-fr-r-l-def-brand-all_products-na-go-classic-marque_renault_go_def_exact&utm_medium=cpc&utm_source=google&utm_content=generic-na-brand-ao-exact-contextual-def_renault-renault&utm_term=renault&&&ppc_keyword=renault&gad_source=1&gclid=Cj0KCQjwhb60BhClARIsABGGtw-065BEHyfXS9jGutRwLhtxhY-7iV0odY0LqciFY4FWYW9LsqzydaUaAgMjEALw_wcB&gclsrc=aw.ds"
-                >Renault</a
-              >
-            </li>
-            <li>
-              <a href="https://www.kebab-frites.com/kebab/brignoles-v34474.html"
-                >Kebab</a
-              >
-            </li>
-            <li>
-              <a href="https://www.credit-agricole.fr/ca-pca/particulier.html"
-                >Crédit agricole</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://travail-emploi.gouv.fr/droit-du-travail/handicap-et-travail/article/esat-etablissements-ou-services-d-aide-par-le-travail"
-                >Travail Emploi</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="social">
-          <a href="https://www.instagram.com/"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a href="https://x.com/home?lang=fr"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-          <a href="https://www.facebook.com/"
-            ><i class="fa-brands fa-twitte"></i
-          ></a>
-        </div>
-        <form action="newsletter.php" method="post" style="display: none">
-          <p>Inscription à la newsletter</p>
-          Name: <input type="text" name="name" /><br />
-          E-mail: <input type="text" name="email" /><br />
-          <input type="submit" />
-        </form>
-      </article>
+      </div>
     </footer>
     <script src="js/script.js"></script>
   </body>

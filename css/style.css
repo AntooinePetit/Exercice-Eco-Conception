@@ -50,23 +50,33 @@ img {
   object-fit: cover;
 }
 
+.container-1440 {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 15px;
+}
+
 /* header */
 
 header {
   background-color: var(--black);
+  padding: 15px 0;
+}
+
+.header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
 }
 
-header ul {
+.header ul {
   display: flex;
   gap: 50px;
   margin-right: 80px;
 }
 
-header > a {
+.header > a {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -84,6 +94,10 @@ header > a {
   position: absolute;
   right: 20px;
   color: #fff;
+
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 #cart-content {
@@ -109,14 +123,10 @@ header > a {
 
 #about {
   background-color: var(--main-color);
+  margin-bottom: 80px;
 }
 
-#about {
-  max-width: 1440px;
-  margin: auto;
-}
-
-#about {
+#about .container-1440 {
   display: grid;
   grid-template-columns: 50% auto;
   gap: 80px;
@@ -141,12 +151,6 @@ header > a {
 }
 
 /* Section 2 */
-
-.section2 {
-  max-width: 1440px;
-  margin: auto;
-  padding: 0 15px;
-}
 
 .section2 > div:nth-child(1) {
   text-align: center;
@@ -201,7 +205,6 @@ header > a {
 /* Section 3 */
 
 .section3 {
-  max-width: 1440px;
   margin: 80px auto;
   display: grid;
   grid-template-columns: auto 50%;
@@ -238,7 +241,7 @@ form input:nth-child(3) {
   height: 80px;
 }
 
-form input[type=submit] {
+form input[type="submit"] {
   background-color: var(--black);
   color: var(--white);
 
@@ -250,9 +253,17 @@ form input[type=submit] {
 
 /* Footer */
 
-.footer {
+footer {
   background-color: var(--black);
   margin-top: 80px;
+  padding-top: 15px;
+}
+
+footer a:hover{
+    color: var(--main-color);
+}
+
+.footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -264,9 +275,12 @@ form input[type=submit] {
   align-items: center;
 }
 
+.social a {
+  padding: 15px 25px;
+}
+
 .footer div {
   display: flex;
-  gap: 50px;
 }
 
 .footer2 {
@@ -275,6 +289,15 @@ form input[type=submit] {
   gap: 40px;
   padding: 15px;
   background: var(--black);
+}
+
+.footer2 .apropos h3,
+.footer2 .apropos p {
+  color: var(--white);
+}
+
+.footer2 ul{
+    justify-self: center;
 }
 
 /* Responsive */
