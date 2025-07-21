@@ -309,9 +309,11 @@ footer a:hover{
     grid-template-columns: auto;
   }
 
-  .section2 article {
-    flex: 1 0 48%;
-    /* flex-wrap: wrap; */
+  .section2 div:nth-child(2) {
+    article{
+        flex: 1 0 48%;
+    }
+    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 767px) {
@@ -327,6 +329,10 @@ footer a:hover{
     position: absolute;
     top: 50px;
     left: 0;
+
+    a:hover{
+        color: var(--main-color);
+    }
   }
 
   .header ul.show {
@@ -340,5 +346,15 @@ footer a:hover{
 
   .menu-toggle {
     display: block;
+  }
+
+  #about .container-1440,
+  .footer2{
+    grid-template-columns: 1fr;
+  }
+
+  .footer2 ul{
+    justify-self: baseline;
+    padding: 0;
   }
 }
