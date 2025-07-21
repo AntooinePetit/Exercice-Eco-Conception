@@ -237,8 +237,9 @@ form {
   margin: auto;
 }
 
-form input:nth-child(3) {
+form textarea {
   height: 80px;
+  resize: none;
 }
 
 form input[type="submit"] {

@@ -178,9 +178,12 @@
           form below and we'll get back to you as soon as possible.
         </p>
         <form action="#" class="formulaire">
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Email" />
-          <input type="text" placeholder="Message" />
+          <label for="name">Name :</label>
+          <input type="text" name="name" placeholder="Name" />
+          <label for="email">Email :</label>
+          <input type="email" name="email" placeholder="Email" />
+          <label for="message">Message :</label>
+          <textarea name="message" id="message" placeholder="Message"></textarea>
           <input type="submit" value="Submit" />
         </form>
       </section>
@@ -255,13 +258,6 @@
               <li><a href="#">Refund Policy</a></li>
             </ul>
           </div>
-
-          <form action="newsletter.php" method="post" style="display: none">
-            <p>Inscription à la newsletter</p>
-            Name: <input type="text" name="name" /><br />
-            E-mail: <input type="text" name="email" /><br />
-            <input type="submit" />
-          </form>
         </div>
       </div>
     </footer>
